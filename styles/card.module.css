@@ -1,0 +1,31 @@
+card .css .card-list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+
+.ToDoItem:hover > .DeleteToDo {
+  display: block;
+}
+
+.DeleteToDo {
+  display: none;
+  cursor: pointer;
+}
+
+.textSpan{
+  cursor: pointer;
+  margin-left: 20px;
+
+}
+
+.checked{
+color: gray;
+text-decoration: line-through;
+}
+
+.checkbox{
+  display: flex;
+  cursor: pointer;
+}

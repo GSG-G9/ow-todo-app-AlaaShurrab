@@ -1,0 +1,118 @@
+.App {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-dark {
+  background-color: rgb(45, 45, 54);
+}
+
+.page-display {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 100%;
+}
+
+.input-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.text-field {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.text-field-dark {
+  background-color: rgb(17, 39, 58);
+  color: rgb(217, 217, 230);
+}
+
+.back-img {
+  width: 100%;
+  height: 210px;
+  color: var(--font-color);
+}
+
+.back-img-dark {
+  background: url(../public/images/bg-desktop-dark.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.back-img-light {
+  background: url(../public/images/bg-desktop-light.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.btn-groups {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
+}
+
+.display-btn-group {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.active {
+  color: rgb(48, 144, 235);
+  font-weight: 600;
+}
+
+.filters {
+  font-size: 12px;
+  color: rgb(93, 104, 102);
+  display: flex;
+  justify-content: space-between;
+  width: 32%;
+}
+
+.table-container {
+  border-radius: 10px;
+  box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.17);
+  color: rgb(217, 217, 230);
+}
+
+.table-container-dark {
+  background-color: rgb(17, 39, 58);
+  color: rgb(217, 217, 230);
+}
+
+.table-container-light {
+  background-color: white;
+  color: black;
+}
+
+.footer {
+  margin: 30px;
+  align-self: center;
+  font-size: 12px;
+  color: rgb(93, 104, 102);
+}
