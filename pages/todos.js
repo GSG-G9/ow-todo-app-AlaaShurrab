@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Card from "../components/Card";
+import TodoTable from "../components/TodoTable";
 
 import styles from "../styles/Todos.module.css";
 
@@ -67,14 +67,14 @@ const todos = () => {
 
   const addToDo = (e) => {
     if (e.key === "Enter") {
-      console.log({ e });
-      if (newTodo) {
+      if (!newTodo) {
         return;
       }
       setToDos([
         { key: counter, completed: false, content: newTodo },
         ...toDos,
       ]);
+      console.log({ toDos });
       setNewTodo("");
       setCount(parseInt(counter, 10) + 1);
     }
@@ -119,10 +119,10 @@ const todos = () => {
           <div
             class={`${styles["table-container"]} ${styles["table-container-dark"]}`}
           >
-            {todos.length !== 0 && (
+            {toDos.length !== 0 && (
               <TodoTable
-                todos={todos}
-                setTodos={setTodos}
+                todos={toDos}
+                setTodos={setToDos}
                 checkTodo={checkToDo}
               />
             )}
